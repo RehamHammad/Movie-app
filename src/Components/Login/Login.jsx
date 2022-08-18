@@ -72,7 +72,7 @@ export default function Login(props) {
       <label>Password: </label>
       <input  onChange={getFormValue} type='password' className='form-control' name='password'  />
     </div>
-    <button  className='btn btnSignin float-end text-white' type='submit' >{loading?<i className='fa fa-spinner fa-spin' ></i>:'Login'}</button>
+    <button  className='btn float-end text-white' type='submit' >{loading?<i className='fa fa-spinner fa-spin' ></i>:'Login'}</button>
     <div className='clear-fix' ></div>
     </form>
    </div>
