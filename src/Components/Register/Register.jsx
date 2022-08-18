@@ -44,8 +44,8 @@ export default function Register() {
   }
   function validateForm(){
     const schema = Joi.object({
-      first_name:Joi.string().alphanum().required().min(2).max(20),
-      last_name:Joi.string().alphanum().required().min(3).max(20),
+      first_name:Joi.string().required().min(2).max(20),
+      last_name:Joi.string().required().min(3).max(20),
       age:Joi.number().required().min(20).max(80),
       email:Joi.string().required().email({tlds:{allow:['net','com']}}),
       password:Joi.string().required().min(5).max(15)
